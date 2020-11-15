@@ -24,7 +24,7 @@ const JumbotronPage = () => {
                         >
                             <MDBCol className="py-5">
                                 <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">
-                                    I'm here to help!
+                                    I/m here to help!
                                 </MDBCardTitle>
                                 <p className="mx-5 mb-5">
                                     Over ten years of software development
@@ -32,10 +32,7 @@ const JumbotronPage = () => {
                                     what I know.
                                 </p>
                                 <MDBBtn outline className="mb-5">
-                                    <MDBIcon
-                                        icon="clone"
-                                        className="mr-2"
-                                    ></MDBIcon>{' '}
+                                    <MDBIcon icon="clone" className="mr-2" />
                                     <Link to="/aboutme">Hire Me!</Link>
                                 </MDBBtn>
                             </MDBCol>

@@ -15,7 +15,8 @@ const FooterPage = () => {
                         <ul>
                             <li className="list-unstyled">
                                 <a href="https://www.linkedin.com/in/summertime/">
-                                    <MDBIcon fab icon="linkedin" /> LinkedIn
+                                    <MDBIcon fab icon="linkedin" />
+                                    LinkedIn
                                 </a>
                             </li>
                         </ul>
@@ -24,8 +25,9 @@ const FooterPage = () => {
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
-                    &copy; {new Date().getFullYear()} Copyright: Summertime
-                    Development LLC
+                    &copy;
+                    {new Date().getFullYear()}
+                    Copyright: Summertime Development LLC
                 </MDBContainer>
             </div>
         </MDBFooter>

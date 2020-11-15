@@ -3,6 +3,14 @@ module.exports = {
         browser: true,
         es2021: true,
     },
+    settings: {
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+                moduleDirectory: ['node_modules', 'src/'],
+            },
+        },
+    },
     extends: [
         'plugin:react/recommended',
         'airbnb',

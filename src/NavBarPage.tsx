@@ -19,10 +19,11 @@ function NavbarPage() {
                 <MDBCollapse id="navbarCollapse3" navbar>
                     <MDBNavbarNav left>
                         <MDBNavbarBrand>
+                            {/* //onClick={() => history.push('/')} */}
                             <img
                                 src={Logo}
+                                alt=""
                                 style={{ height: '100px' }}
-                                onClick={() => history.push('/')}
                             />
                         </MDBNavbarBrand>
                     </MDBNavbarNav>
