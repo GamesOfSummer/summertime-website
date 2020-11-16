@@ -1,21 +1,19 @@
-import { MDBRow, MDBAnimation } from 'mdbreact';
 import React from 'react';
+import { Row } from 'react-bootstrap';
 import CardExample from './Card';
 
 const Cards = () => {
     return (
-        <MDBAnimation type="fadeIn" delay="0.0s">
-            <MDBRow>
-                {CardExample(
-                    'Git Alias',
-                    '/freebies/gitalias',
-                    'Supercharge your git-fu!'
-                )}
-                {CardExample('React App Checklist', '', '')}
-                {CardExample('The Books you Need to Read', '', '')}
-                {CardExample('Problems in the Workplace', '', '')}
-            </MDBRow>
-        </MDBAnimation>
+        <Row>
+            {CardExample(
+                'Git Alias',
+                '/freebies/gitalias',
+                'Supercharge your git-fu!'
+            )}
+            {CardExample('React App Checklist', '', '')}
+            {CardExample('The Books you Need to Read', '', '')}
+            {CardExample('Problems in the Workplace', '', '')}
+        </Row>
     );
 };
 

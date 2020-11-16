@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBContainer } from 'mdbreact';
+import { Container } from 'react-bootstrap';
 import Main from './Main';
 import './App.css';
 
@@ -10,9 +10,9 @@ const App = () => {
     };
 
     return (
-        <MDBContainer fluid style={styles}>
+        <Container fluid style={styles}>
             <Main />
-        </MDBContainer>
+        </Container>
     );
 };
 

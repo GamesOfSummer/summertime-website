@@ -1,12 +1,8 @@
 import React from 'react';
-import { MDBCol } from 'mdbreact';
+import { Col } from 'react-bootstrap';
 
 const GitAliasArticle = () => {
-    return (
-        <MDBCol size="3" md="3" styles={{ width: 500, height: 1000 }}>
-            GitAlias - Just do it.
-        </MDBCol>
-    );
+    return <Col>GitAlias - Just do it.</Col>;
 };
 
 export default GitAliasArticle;
