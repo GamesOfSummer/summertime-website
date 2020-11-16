@@ -8,7 +8,6 @@ import {
     MDBCardText,
     MDBCol,
 } from 'mdbreact';
-import { Link } from 'react-router-dom';
 
 const CardExample = (title: string, route: string, summary: string) => {
     return (
@@ -22,9 +21,7 @@ const CardExample = (title: string, route: string, summary: string) => {
                 <MDBCardBody>
                     <MDBCardTitle>{title}</MDBCardTitle>
                     <MDBCardText>{summary}</MDBCardText>
-                    <MDBBtn>
-                        <Link to={route}>Read More</Link>
-                    </MDBBtn>
+                    <MDBBtn>{/* <Link to={route}>Read More</Link> */}</MDBBtn>
                 </MDBCardBody>
             </MDBCard>
         </MDBCol>

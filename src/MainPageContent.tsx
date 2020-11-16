@@ -1,11 +1,11 @@
 import React from 'react';
 import Cards from './Cards';
-import JumbotronPage from './JumbotronPage';
+// import JumbotronPage from './JumbotronPage';
 
 const MainPageContent = () => {
     return (
         <div>
-            <JumbotronPage />
+            {/* <JumbotronPage /> */}
             <main>
                 <div className="container">
                     <section

@@ -1,8 +1,6 @@
-import { MDBRow } from 'mdbreact';
+import { MDBRow, MDBAnimation } from 'mdbreact';
 import React from 'react';
 import CardExample from './Card';
-
-const { MDBAnimation } = require('mdbreact');
 
 const Cards = () => {
     return (
