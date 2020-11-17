@@ -1,14 +1,23 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 
 const CardExample = (title: string, route: string, summary: string) => {
+    const history = useHistory();
+
+    function handleClick() {
+        history.push(route);
+    }
+
     return (
         <Col>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{summary}</Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary" onClick={() => handleClick()}>
+                    Read More
+                </Button>
             </Card.Body>
         </Col>
     );

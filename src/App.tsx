@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Main from './Main';
+import Main from './content/Main';
 import './App.css';
 
 const App = () => {
