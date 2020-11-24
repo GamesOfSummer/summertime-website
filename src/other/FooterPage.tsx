@@ -1,8 +1,16 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 const FooterPage = () => {
-    return <Navbar fixed="bottom" />;
+    return (
+        <Nav className="justify-content-end" activeKey="/">
+            <Nav.Item>
+                <Nav.Link eventKey="disabled" disabled>
+                    Summertime Development LLC
+                </Nav.Link>
+            </Nav.Item>
+        </Nav>
+    );
 };
 
 export default FooterPage;

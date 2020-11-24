@@ -1,15 +1,28 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
-// import Logo from './images/summertime_logo_small.png';
+import { Image } from 'react-bootstrap';
+import Logo from '../images/summertime_logo_small.png';
 
 const NavBarPage = () => {
     return (
         <div>
-            <Nav>
-                <Nav.Item>
-                    <Nav.Link href="/">Home</Nav.Link>
-                </Nav.Item>
-            </Nav>
+            <div style={{ height: '100px', width: '100%' }}>
+                <Image
+                    src={Logo}
+                    style={{
+                        width: '300px',
+                        position: 'relative',
+                        float: 'left',
+                    }}
+                />
+                <div
+                    style={{
+                        float: 'right',
+                        width: '100px',
+                    }}
+                >
+                    Hire Me!
+                </div>
+            </div>
         </div>
     );
 };
