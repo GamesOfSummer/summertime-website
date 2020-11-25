@@ -1,18 +1,23 @@
 import React from 'react';
+import createSagaMiddleware from 'redux-saga';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import invariant from 'redux-immutable-state-invariant';
 import { Container } from 'react-bootstrap';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import Main from './content/Main';
 import './App.css';
 import rootReducer from './redux/rootReducer';
 
+const composeEnhancers = composeWithDevTools({ trace: true, traceLimit: 10 });
+const sagaMiddleware = createSagaMiddleware();
+
 const store = createStore(
     rootReducer,
-    // eslint-disable-next-line no-underscore-dangle
-    (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
-        // eslint-disable-next-line no-underscore-dangle
-        (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+    composeEnhancers(applyMiddleware(invariant(), sagaMiddleware))
 );
+
+sagaMiddleware.run(mySaga);
 
 const App = () => {
     const styles = {
