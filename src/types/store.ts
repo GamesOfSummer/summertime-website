@@ -1,7 +1,9 @@
+import { DefaultPicture, Picture } from './picture';
+
 export interface Store {
-    label: string;
+    picture: Picture;
 }
 
 export function DefaultStore(): Store {
-    return { label: '' };
+    return { picture: DefaultPicture() };
 }
