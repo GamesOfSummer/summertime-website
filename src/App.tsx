@@ -10,17 +10,18 @@ import './App.css';
 import rootReducer from './redux/rootReducer';
 import rootSaga from './redux/rootSaga';
 
-const composeEnhancers = composeWithDevTools({ trace: true, traceLimit: 10 });
-const sagaMiddleware = createSagaMiddleware();
-
-const store = createStore(
-    rootReducer,
-    composeEnhancers(applyMiddleware(invariant(), sagaMiddleware))
-);
-
-sagaMiddleware.run(rootSaga);
-
 const App = () => {
+    const composeEnhancers = composeWithDevTools({
+        trace: true,
+        traceLimit: 10,
+    });
+    const sagaMiddleware = createSagaMiddleware();
+
+    const store = createStore(
+        rootReducer,
+        composeEnhancers(applyMiddleware(invariant(), sagaMiddleware))
+    );
+    sagaMiddleware.run(rootSaga);
     const styles = {
         padding: '0px',
         fontFamily: 'futura',

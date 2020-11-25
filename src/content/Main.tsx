@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBarPage from '../other/NavBarPage';
 import GitAliasArticle from '../articles/GitAliasArticle';
 import AboutMe from './AboutMe';
 import MainPageContent from './MainPageContent';
 import FooterPage from '../other/FooterPage';
+import { callAsyncGetPictures } from '../redux/pictureActions';
 
 const Main = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        const fetchData = async () => {
+            await dispatch(callAsyncGetPictures());
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div>
             <NavBarPage />

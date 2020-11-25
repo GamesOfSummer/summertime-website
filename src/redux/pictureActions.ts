@@ -10,9 +10,11 @@ export enum pictureActionsEnum {
 
 export function* asyncGetPictures(): any {
     try {
-        yield delay(5000);
         // eslint-disable-next-line no-console
-        console.log('Ping');
+        console.log('asyncGetPictures()');
+        yield delay(2000);
+        // eslint-disable-next-line no-console
+        console.log('asyncGetPictures()');
     } catch (e) {
         throw new Error(e.message);
     }
@@ -23,5 +25,6 @@ export const callAsyncGetPictures = () => ({
 });
 
 export function* watchAsyncGetPictures() {
+    console.log('asyncGetPictures()');
     yield takeLatest(pictureActionsEnum.asyncGetPictures, asyncGetPictures);
 }
