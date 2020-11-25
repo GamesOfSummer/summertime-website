@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import Main from './content/Main';
 import './App.css';
 import rootReducer from './redux/rootReducer';
+import rootSaga from './redux/rootSaga';
 
 const composeEnhancers = composeWithDevTools({ trace: true, traceLimit: 10 });
 const sagaMiddleware = createSagaMiddleware();
@@ -17,7 +18,7 @@ const store = createStore(
     composeEnhancers(applyMiddleware(invariant(), sagaMiddleware))
 );
 
-sagaMiddleware.run(mySaga);
+sagaMiddleware.run(rootSaga);
 
 const App = () => {
     const styles = {
