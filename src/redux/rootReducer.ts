@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import pictureReducer from './pictureReducer';
 
 const rootReducer = combineReducers({
-    pictureReducer,
+    pictures: pictureReducer,
 });
 
 export default rootReducer;
