@@ -1,7 +1,11 @@
 export interface Picture {
-    label: string;
+    url: string;
 }
 
-export function DefaultPicture(): Picture {
-    return { label: '' };
+export interface Pictures {
+    pictures: Array<Picture>;
+}
+
+export function DefaultPictures(): Pictures {
+    return { pictures: [] };
 }

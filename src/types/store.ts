@@ -1,9 +1,9 @@
-import { DefaultPicture, Picture } from './picture';
+import { DefaultPictures, Pictures } from './picture';
 
 export interface Store {
-    picture: Picture;
+    pictures: Pictures;
 }
 
 export function DefaultStore(): Store {
-    return { picture: DefaultPicture() };
+    return { pictures: DefaultPictures() };
 }

@@ -1,6 +1,7 @@
-import { DefaultPicture, Picture } from '../types/picture';
+import { DefaultPictures, Picture } from '../types/picture';
+import { pictureActionsEnum } from './pictureActions';
 
-const initialState = DefaultPicture();
+const initialState = DefaultPictures();
 
 const pictureReducer = (state: Picture, action: any) => {
     if (state === undefined || action === undefined) {
@@ -8,6 +9,10 @@ const pictureReducer = (state: Picture, action: any) => {
     }
 
     switch (action.type) {
+        case pictureActionsEnum.setPictures: {
+            const pictures = action.value;
+            return { ...state, pictures };
+        }
         default:
             return state;
     }
