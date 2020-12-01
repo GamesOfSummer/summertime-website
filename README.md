@@ -1,11 +1,9 @@
-My future website.
+Uses React with functional components and hooks, Typescript, Redux, Redux-Saga, jest for Unit Tests, and eslint/prettier combined.
 
-Uses React with functional components and hooks, Typescript, and eslint/prettier combined.
+## License
 
-Redux soon. And sass, because sass is cool.
+The MIT License
 
-# Things to do
+## Why MIT
 
--   get the website cleaned up
--   install sass
--   get a single article working
+Because I want you to use this for your future projects!
