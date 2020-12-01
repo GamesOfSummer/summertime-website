@@ -2,7 +2,6 @@
 /* eslint-disable no-shadow */
 import { call, put, takeLatest } from 'redux-saga/effects';
 import axios from 'axios';
-import pictureReducer from './pictureReducer';
 import { Pictures } from '../types/picture';
 
 const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));

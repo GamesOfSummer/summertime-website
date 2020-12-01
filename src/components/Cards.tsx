@@ -11,8 +11,8 @@ const Cards = () => {
                 'Supercharge your git-fu!'
             )}
             {CardExample('React App Checklist', '', '')}
-            {CardExample('The Books you Need to Read', '', '')}
-            {CardExample('Problems in the Workplace', '', '')}
+            {CardExample('Coming Soon The Books you Need to Read', '', '')}
+            {CardExample('Coming Soon - Problems in the Workplace', '', '')}
         </Row>
     );
 };
