@@ -7,6 +7,7 @@ import AboutMe from './AboutMe';
 import MainPageContent from './MainPageContent';
 import FooterPage from '../other/FooterPage';
 import { callAsyncGetPictures } from '../redux/pictureActions';
+import ReactAppChecklist from '../articles/ReactAppChecklist';
 
 const Main = () => {
     const dispatch = useDispatch();
@@ -29,6 +30,10 @@ const Main = () => {
                         <Route
                             path="/freebies/gitalias"
                             component={GitAliasArticle}
+                        />
+                        <Route
+                            path="/freebies/ReactAppChecklist"
+                            component={ReactAppChecklist}
                         />
                     </Switch>
                 </Router>

@@ -10,7 +10,11 @@ const Cards = () => {
                 '/freebies/gitalias',
                 'Supercharge your git-fu!'
             )}
-            {CardExample('React App Checklist', '', '')}
+            {CardExample(
+                'React App Checklist',
+                '/freebies/ReactAppChecklist',
+                'Powerhouse your React!'
+            )}
             {CardExample('Coming Soon The Books you Need to Read', '', '')}
             {CardExample('Coming Soon - Problems in the Workplace', '', '')}
         </Row>
