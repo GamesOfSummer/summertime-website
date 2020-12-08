@@ -11,10 +11,10 @@ const JumbotronPage = () => {
 
     return (
         <Jumbotron>
-            <h1>Hello, world!</h1>
+            <h1>Howdy, let&apos;s code!</h1>
             <p>
-                This is a simple hero unit, a simple jumbotron-style component
-                for calling extra attention to featured content or information.
+                +11 years of expirence. This website has an MIT lisecene with
+                React, Redux, and other goodes. Feel free to look at the code!
             </p>
             <p>
                 <Button variant="primary" onClick={handleClick}>

@@ -25,7 +25,7 @@ export function* asyncGetPictures(): any {
         const apiCall = () => {
             return axios
                 .get(
-                    'https://api.pexels.com/v1/search?query=nature&size=medium&orientation=landscape&per_page=4',
+                    'https://api.pexels.com/v1/search?query=nature&size=medium&orientation=landscape&per_page=8',
                     {
                         headers: headerParams,
                     }

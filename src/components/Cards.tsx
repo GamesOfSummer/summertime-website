@@ -15,8 +15,8 @@ const Cards = () => {
                 '/freebies/ReactAppChecklist',
                 'Powerhouse your React!'
             )}
-            {CardExample('Coming Soon The Books you Need to Read', '', '')}
-            {CardExample('Coming Soon - Problems in the Workplace', '', '')}
+            {CardExample('(Coming Soon) The Books you Need to Read', '', '')}
+            {CardExample('(Coming Soon) Problems in the Workplace', '', '')}
         </Row>
     );
 };
