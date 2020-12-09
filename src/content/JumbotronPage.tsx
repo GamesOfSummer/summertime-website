@@ -13,13 +13,20 @@ const JumbotronPage = () => {
         <Jumbotron>
             <h1>Howdy, let&apos;s code!</h1>
             <p>
-                +11 years of expirence. This website has an MIT lisecene with
-                React, Redux, and other goodes. Feel free to look at the code!
+                +11 years of expierence. This website has an MIT license with
+                React, Redux, and other goodies. Feel free to look at the code!
             </p>
             <p>
                 <Button variant="primary" onClick={handleClick}>
                     Hire Me!
                 </Button>
+
+                <a
+                    href="https://github.com/GamesOfSummer/summertime-website"
+                    className="btn btn-primary"
+                >
+                    See the code!
+                </a>
             </p>
         </Jumbotron>
     );

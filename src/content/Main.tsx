@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBarPage from '../other/NavBarPage';
 import GitAliasArticle from '../articles/GitAliasArticle';
 import AboutMe from './AboutMe';
 import MainPageContent from './MainPageContent';
-import FooterPage from '../other/FooterPage';
 import { callAsyncGetPictures } from '../redux/pictureActions';
 import ReactAppChecklist from '../articles/ReactAppChecklist';
 
 const Main = () => {
     const dispatch = useDispatch();
+
     useEffect(() => {
         const fetchData = async () => {
             await dispatch(callAsyncGetPictures());
@@ -21,7 +20,6 @@ const Main = () => {
 
     return (
         <div>
-            <NavBarPage />
             <div style={{ minHeight: '1000px' }}>
                 <Router>
                     <Switch>
@@ -38,7 +36,6 @@ const Main = () => {
                     </Switch>
                 </Router>
             </div>
-            <FooterPage />
         </div>
     );
 };
