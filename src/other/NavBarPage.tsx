@@ -5,7 +5,10 @@ import Logo from '../images/summertime_logo_small.png';
 const NavBarPage = () => {
     return (
         <div>
-            <div style={{ height: '100px', width: '100%' }}>
+            <div
+                className="panel-primary"
+                style={{ height: '100px', width: '100%' }}
+            >
                 <Image
                     src={Logo}
                     style={{

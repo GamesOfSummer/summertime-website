@@ -3,12 +3,8 @@ import { Nav } from 'react-bootstrap';
 
 const FooterPage = () => {
     return (
-        <Nav className="justify-content-end" activeKey="/">
-            <Nav.Item>
-                <Nav.Link eventKey="disabled" disabled>
-                    Summertime Development LLC
-                </Nav.Link>
-            </Nav.Item>
+        <Nav className="panel-primary justify-content-end" activeKey="/">
+            Summertime Development LLC
         </Nav>
     );
 };
