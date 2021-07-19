@@ -39,4 +39,4 @@ const Definitions = () => {
     );
 };
 
-export default ReactAppChecklist;
+export default Definitions;
